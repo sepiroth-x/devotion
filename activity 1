@@ -1,0 +1,31 @@
+/*
+* Name: Mary Grace Ocariza
+* Section: Devotion
+* Year: 4th
+*/
+
+
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String[]args){
+	    Scanner averageGrade = new Scanner(System.in);
+	    int grades = 0, total = 0, option, numberOfLoops = 0;
+	    
+	    do{
+		    System.out.print("Do you want to enter a grade? [Press 1 for Yes, 0 for No]: ");
+		    option = averageGrade.nextInt();
+    		    if (option == 1){
+    		    System.out.print("Please enter a grade: ");
+    		    grades = averageGrade.nextInt();
+    		    total += grades;
+    		    numberOfLoops++;
+    		    
+		    }
+		    
+	    }while(option == 1);
+	    
+	    System.out.printf("Average: " + ((float)total/numberOfLoops));
+	    
+	}   
+}
