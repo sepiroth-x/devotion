@@ -1,0 +1,117 @@
+/**
+* Name: Mary Grace Ocariza
+* Section: IT Dept
+* Year: 4th Year
+*/
+
+
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner code=new Scanner(System.in);
+		int total=0,item;
+		System.out.println("DO YOU WANT TO MAKE AN ORDER?\[1]YES    [2]NO");
+		int i=code.nextInt();
+		while(i==1){
+		    System.out.println("SELECT FOR CATEGORIES BELOW:");
+		    System.out.println("[1]FOODS\[2]SNACKS\[3]BEVERAGES");
+		    int ctgry=code.nextInt();
+		    
+		    if(ctgry==1){
+		        System.out.println("--YOU SELECTED FOODS--");
+		        //FOOD CHOICES//
+		       System.out.println("[1]FRIED CHICKEN: $25");
+		       System.out.println("[2]BIHON: $10");
+		       System.out.println("[3]LINAT AN: $30");
+		       System.out.println("[4]SIOMAI: $7");
+		       System.out.println("[5]LIEMPO: $280");
+		       
+		        System.out.println("ENTER ITEM:");
+		        item=code.nextInt();
+		        //FOOD PRICES//
+		        if (item==1){
+		            System.out.println("YOU SELECTED 1pc FRIED CHICKEN");
+		            total=total+25;
+		            }else if (item==2){
+		            System.out.println("YOU SELECTED 1pc BIHON");
+		            total=total+10;
+		            }else if (item==3){
+		            System.out.println("YOU SELECTED 1pc LINAT AN");
+		            total=total+30;
+		            }else if (item==1){
+		            System.out.println("YOU SELECTED 1pc SIOMAI");
+		            total=total+7;
+		            }else if (item==5){
+		            System.out.println("YOU SELECTED 1pc LIEMPO");
+		            total=total+280;
+		            }else{
+		                System.out.println("INVALID KEY");
+		            }
+		        
+		    }else if(ctgry==2){
+		        System.out.println("--YOU SELECTED SNACKS--");
+		        //SNACKS CHOICES//
+		       System.out.println("[1]BANANA CAKE: $15");
+		       System.out.println("[2]MANGO FLOAT: $80");
+		       System.out.println("[3]SPANISH BREAD: $10");
+		       System.out.println("[4]COKE: $10");
+		       System.out.println("[5]MANGO JUICE: $20");
+		        //SNACKS PRICES//
+		        System.out.println("ENTER ITEM:");
+		        item=code.nextInt();
+		        if (item==1){
+		            System.out.println("YOU SELECTED 1pc BANANA CAKE");
+		            total=total+15;
+		            }else if (item==2){
+		            System.out.println("YOU SELECTED 1pc MANGO FLOAT");
+		            total=total+80;
+		            }else if (item==3){
+		            System.out.println("YOU SELECTED 1pc SPANISH BREAD");
+		            total=total+10;
+		            }else if (item==4){
+		            System.out.println("YOU SELECTED 1pc COKE");
+		            total=total+15;
+		            }else if (item==5){
+		            System.out.println("YOU SELECTED 1pc MANGO JUICE");
+		            total=total+25;
+		            }else{
+		                System.out.println("INVALID KEY");
+		            }
+		    }else if(ctgry==3){
+		        System.out.println("--YOU SELECTED BEVERAGES--");
+		        //BEVERAGE CHOICES//
+		       System.out.println("[1]EMPERADOR: $120");
+		       System.out.println("[2]KULAFO: $50");
+		       System.out.println("[3]GSM MOJITOS: $125");
+		       System.out.println("[4]TANDUAY: $45");
+		       System.out.println("[5]REDHORSE: $135");
+		       //BEVERAGE PRICES//
+		       System.out.println("ENTER ITEM:");
+		        item=code.nextInt();
+		        if (item==1){
+		            System.out.println("YOU SELECTED 1pc EMPERADOR");
+		            total=total+120;
+		            }else if (item==2){
+		            System.out.println("YOU SELECTED 1pc KULAFO");
+		            total=total+50;
+		            }else if (item==3){
+		            System.out.println("YOU SELECTED 1pc GSM MOJITOS");
+		            total=total+125;
+		            }else if (item==4){
+		            System.out.println("YOU SELECTED 1pc TANDUAY");
+		            total=total+45;
+		            }else if (item==5){
+		            System.out.println("YOU SELECTED 1pc REDHORSE");
+		            total=total+135;
+		            }else{
+		                System.out.println("INVALID KEY");
+		            }
+		    }else{
+		        System.out.println("INVALID KEY.");
+		    }
+		    System.out.println("DO YOU WANT TO MAKE ANOTHER PURCHASE?\[1]YES    [2]NO");
+		    i=code.nextInt();
+		}
+		System.out.println("TOTAL PURCHACE:"+total);
+	}
+}
