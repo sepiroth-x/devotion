@@ -1,0 +1,34 @@
+/*
+* Name: Lemar Legara
+* Section: Altruism/Devotion
+* Year: 4th
+*/
+
+//TECH418-Midterm.Activity01
+
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String[]args){
+	    Scanner myConsole = new Scanner(System.in);
+	    int grades = 0, total = 0, i = 0, preference;
+	    
+	    do{
+		    System.out.print("\nWould you like to enter a grade?\n[1] Yes  [2] No: ");
+		    preference = myConsole.nextInt();
+    		    if (preference == 1){
+    		    System.out.print("Enter a grade: ");
+    		    grades = myConsole.nextInt();
+    		    total += grades;
+    		    i++;
+    		    
+		    }
+		    
+	    }while(preference == 1);
+	    
+	    System.out.println("Total: " + total);
+	    System.out.println("Average: " + (total/i));
+	    System.out.println("No. of Grades Entered: " + i);
+	    
+	}   
+}
